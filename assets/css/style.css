@@ -1,0 +1,133 @@
+@import url(./reset.css);
+
+body{
+  background-color: var(--bg-color);
+  color: #fff;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  padding: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.option{
+  flex-basis: 12%;
+  height: calc(80vh - 2rem);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  cursor: pointer;
+  transition: flex-grow .6s linear, background-color .4s ease-in-out;
+}
+
+.option:nth-child(1),
+.option:nth-child(2),
+.option:nth-child(3),
+.option:nth-child(4),
+.option:nth-child(5){
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(0.5);	
+}
+
+.option:nth-child(1){
+  background-image: url(../images/ic-bg-vecna.png);
+}
+
+.option:nth-child(2){
+  background-image: url(../images/ic-bg-eleven.png);
+}
+
+.option:nth-child(3){
+  background-image: url(../images/ic-bg-hopper.png);
+}
+
+
+.option:nth-child(4){
+  background-image: url(../images/ic-bg-eddie.png);
+}
+.option:nth-child(5){
+  background-image: url(../images/ic-bg-dustin.png);
+}
+
+.option:hover{
+  background-color: #cde9f5;
+  flex-grow: 2;
+  filter: brightness(1);	
+  
+}
+
+.option:nth-child(1):hover:before{
+  content: 'Vecna - Chegou a hora!';
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.option:nth-child(2):hover:before{
+  content: 'Eleven - O meu herói é o meu pai!';
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.option:nth-child(3):hover:before{
+  content: 'Hopper - Manhãs são para café e contemplação!';
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.option:nth-child(4):hover:before{
+  content: 'Eddie - Bem-vinda ao Hellfire';
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.option:nth-child(5):hover:before{
+  content: 'Dustin - Badda Badda BOOM';
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.option:hover .card-icon{
+  display: none;
+} 
